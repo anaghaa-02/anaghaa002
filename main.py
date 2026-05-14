@@ -16,7 +16,6 @@ if uploaded_file is not None:
 Go to file
 t
 T
-anaghaa-02
 Add files via upload
         interpreter.allocate_tensors()
         
