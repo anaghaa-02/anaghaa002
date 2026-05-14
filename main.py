@@ -13,7 +13,6 @@ if uploaded_file is not None:
     
     try:
         interpreter = tflite.Interpreter(model_path="plant_disease_model.tflite")
-Go to file
 t
 T
 Add files via upload
