@@ -4,9 +4,7 @@ from PIL import Image, ImageOps
 
 # Try importing tflite runtime based on platform availability
 try:
-    import tflite_runtime.interpreter as tflite
-except ImportError:
-    import tensorflow.lite as tflite
+import tensorflow.lite as tflite
 
 # 1. Load your pre-trained TFLite model safely
 @st.cache_resource
