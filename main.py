@@ -12,7 +12,13 @@ if uploaded_file is not None:
     img_array = np.expand_dims(img_array, axis=0)
     
     try:
-        interpreter = tflite.Interpreter(model_path="plant_model.tflite")
+        interpreter = tflite.Interpreter(model_path="plant_disease_model.tflite")
+Go to file
+t
+T
+anaghaa-02
+anaghaa-02
+Add files via upload
         interpreter.allocate_tensors()
         
         input_details = interpreter.get_input_details()
