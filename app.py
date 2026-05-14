@@ -4,7 +4,11 @@ from PIL import Image, ImageOps
 
 # Try importing tflite runtime based on platform availability
 try:
-import tensorflow.lite as tflite
+try:
+    import tensorflow.lite as tflite #  Fixed: Added 4 spaces at the start
+except ImportError:
+    import tflite_runtime.interpreter as tflite
+
 
 # 1. Load your pre-trained TFLite model safely
 @st.cache_resource
